@@ -192,8 +192,8 @@
 #define PANEL_RES_X 64 // Number of pixels width of each individual panel module.
 #define PANEL_RES_Y 32 // Number of pixels height of each individual panel module.
 
-#define NUM_ROWS 1 // Number of Vertical rows of chained panels
-#define NUM_COLS 1 // Number of Horizontal rows of chained panels
+#define NUM_ROWS 3 // Number of Vertical rows of chained panels
+#define NUM_COLS 4 // Number of Horizontal rows of chained panels
 #define PANEL_CHAIN NUM_ROWS*NUM_COLS // Total number of panels chained one to another
 
 // Change this to your needs, for details on VirtualPanel pls see ChainedPanels example
