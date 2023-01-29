@@ -31,29 +31,33 @@ MatrixPanel_I2S_DMA *dma_display = nullptr;
 #include "SD.h"
 #include "SPI.h"
 
+//===============Pins Configuration=====================
+//======================================================
+
 // Micro SD Card Module Pinout
 // VCC = 5V
 // GND = GND
-//#define HSPI_MISO 19
-//#define HSPI_MOSI 4
-//#define HSPI_SCLK 14
-//#define HSPI_CS   5
-//
-//// Led Panel Pinout
-//#define R1_PIN 25
-//#define G1_PIN 26
-//#define B1_PIN 27
-//#define R2_PIN 21
-//#define G2_PIN 22
-//#define B2_PIN 23
-//#define A_PIN 12
-//#define B_PIN 16
-//#define C_PIN 17
-//#define D_PIN 18
-//#define E_PIN 13
-//#define LAT_PIN 32
-//#define OE_PIN 33
-//#define CLK_PIN 15
+
+#define HSPI_MISO 19
+#define HSPI_MOSI 4
+#define HSPI_SCLK 14
+#define HSPI_CS   5
+
+// Led Panel Pinout
+#define R1_PIN 25
+#define G1_PIN 26
+#define B1_PIN 27
+#define R2_PIN 21
+#define G2_PIN 22
+#define B2_PIN 23
+#define A_PIN 12
+#define B_PIN 16
+#define C_PIN 17
+#define D_PIN 18
+#define E_PIN 13
+#define LAT_PIN 32
+#define OE_PIN 33
+#define CLK_PIN 15
 
 
 //=======================Configuration for my Testing Board =====================================
@@ -61,26 +65,26 @@ MatrixPanel_I2S_DMA *dma_display = nullptr;
 // VCC = 5V
 // GND = GND
 
-#define HSPI_MISO 16
-#define HSPI_MOSI 32
-#define HSPI_SCLK 21
-#define HSPI_CS   17
-
-//===================Led Panel Pinout====================
-#define R1_PIN 25
-#define G1_PIN 26
-#define B1_PIN 27
-#define R2_PIN 14
-#define G2_PIN 12
-#define B2_PIN 13
-#define A_PIN 23
-#define B_PIN 19
-#define C_PIN 5
-#define D_PIN 17
-#define E_PIN -1 //18
-#define LAT_PIN 4
-#define OE_PIN 15
-#define CLK_PIN 16
+//#define HSPI_MISO 16
+//#define HSPI_MOSI 32
+//#define HSPI_SCLK 21
+//#define HSPI_CS   17
+//
+////===================Led Panel Pinout====================
+//#define R1_PIN 25
+//#define G1_PIN 26
+//#define B1_PIN 27
+//#define R2_PIN 14
+//#define G2_PIN 12
+//#define B2_PIN 13
+//#define A_PIN 23
+//#define B_PIN 19
+//#define C_PIN 5
+//#define D_PIN 17
+//#define E_PIN -1 //18
+//#define LAT_PIN 4
+//#define OE_PIN 15
+//#define CLK_PIN 16
 //=========================================================================================
 
 // Configure for your panel(s) as appropriate!
