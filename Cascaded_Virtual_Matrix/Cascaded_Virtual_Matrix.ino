@@ -379,41 +379,41 @@ void setup() {
   //  }
 
   // ==================Start SD Card==========================
-  //    Serial.println("Micro SD Card Mounting...");
-  //
-  //    spi = new SPIClass(HSPI);
-  //    spi->begin(HSPI_SCLK, HSPI_MISO, HSPI_MOSI, HSPI_CS);
-  //
-  //    SD.begin(HSPI_CS, *spi);
-  //    delay(50);
-  //
-  //    if (!SD.begin(HSPI_CS, *spi)) {
-  //      Serial.println("Card Mount Failed");
-  //      return;
-  //    }
-  //
-  //    uint8_t cardType = SD.cardType();
-  //
-  //    if (cardType == CARD_NONE) {
-  //      Serial.println("No SD card attached");
-  //      return;
-  //    }
-  //
-  //    Serial.print("SD Card Type: ");
-  //
-  //    if (cardType == CARD_MMC) {
-  //      Serial.println("MMC");
-  //    } else if(cardType == CARD_SD){
-  //      Serial.println("SDSC");
-  //    } else if(cardType == CARD_SDHC){
-  //      Serial.println("SDHC");
-  //    } else {
-  //      Serial.println("UNKNOWN");
-  //    }
-  //
-  //    uint64_t cardSize = SD.cardSize() / (1024 * 1024);
-  //    Serial.printf("SD Card Size: %lluMB\n", cardSize);
-  //    Serial.println();
+      Serial.println("Micro SD Card Mounting...");
+  
+      spi = new SPIClass(HSPI);
+      spi->begin(HSPI_SCLK, HSPI_MISO, HSPI_MOSI, HSPI_CS);
+  
+      SD.begin(HSPI_CS, *spi);
+      delay(50);
+  
+      if (!SD.begin(HSPI_CS, *spi)) {
+        Serial.println("Card Mount Failed");
+        return;
+      }
+  
+      uint8_t cardType = SD.cardType();
+  
+      if (cardType == CARD_NONE) {
+        Serial.println("No SD card attached");
+        return;
+      }
+  
+      Serial.print("SD Card Type: ");
+  
+      if (cardType == CARD_MMC) {
+        Serial.println("MMC");
+      } else if(cardType == CARD_SD){
+        Serial.println("SDSC");
+      } else if(cardType == CARD_SDHC){
+        Serial.println("SDHC");
+      } else {
+        Serial.println("UNKNOWN");
+      }
+  
+      uint64_t cardSize = SD.cardSize() / (1024 * 1024);
+      Serial.printf("SD Card Size: %lluMB\n", cardSize);
+      Serial.println();
 
 
   // Manually configured GPIO pins assigned to: _pins
